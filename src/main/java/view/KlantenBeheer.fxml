@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.KlantenBeheerController">
+   <children>
+      <Pane layoutX="78.0" layoutY="39.0" prefHeight="216.0" prefWidth="387.0">
+         <children>
+            <ListView fx:id="customerList" layoutX="14.0" layoutY="8.0" prefHeight="200.0" prefWidth="368.0" />
+         </children>
+      </Pane>
+      <Button fx:id="editButton" layoutX="94.0" layoutY="279.0" mnemonicParsing="false" onAction="#doChangeCustomer" text="Wijzig Klant" />
+      <Button fx:id="menuButton" layoutX="203.0" layoutY="279.0" mnemonicParsing="false"  text="Menu" />
+      <TextField fx:id="warningText" layoutX="94.0" layoutY="323.0" prefHeight="27.0" prefWidth="368.0" visible="false">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets></TextField>
+   </children>
+</AnchorPane>

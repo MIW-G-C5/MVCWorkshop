@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="619.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CreateUpdateKlantController">
+   <children>
+      <Label fx:id="titleLabel" layoutX="254.0" layoutY="65.0" text="Nieuwe Klant">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <GridPane layoutX="129.0" layoutY="142.0" prefHeight="146.0" prefWidth="341.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="166.0" minWidth="10.0" prefWidth="148.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="193.0" minWidth="10.0" prefWidth="193.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Voorletters" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Tussenvoegsel" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Achternaam" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <Label text="Mobiel nummer" GridPane.halignment="RIGHT" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <TextField fx:id="voorlettersTextfield" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="tussenvoegselTextfield" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="achternaamTextfield" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="mobielTextfield" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <Label text="Klantnummer" GridPane.halignment="RIGHT">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="klantnummerTextfield" disable="true" editable="false" text="klantnummer" GridPane.columnIndex="1" />
+         </children>
+      </GridPane>
+      <Button fx:id="saveButton" layoutX="276.0" layoutY="304.0" mnemonicParsing="false" onAction="#doStore" text="Save" />
+      <Button fx:id="lijstButton" layoutX="327.0" layoutY="304.0" mnemonicParsing="false" onAction="#doBackToList" text="KlantenLijst" />
+      <Button fx:id="menuButton" layoutX="420.0" layoutY="304.0" mnemonicParsing="false" onAction="#doBackToMenu" text="Menu" />
+   </children>
+</AnchorPane>
